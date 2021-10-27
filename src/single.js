@@ -109,9 +109,9 @@ var array=[],access;
 
         return (
             <div>
-                <button onClick={this.func}>add</button>
+                <button onClick={this.func}>load</button>
                 {/* <button onClick={this.print}>print</button> */}
-                <button onClick={this.getData}>load</button>
+                {/* <button onClick={this.getData}>load</button> */}
               <table >
                  <thead>
                  <tr>
