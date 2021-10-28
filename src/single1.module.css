@@ -1,0 +1,36 @@
+table,th,td,tr{
+    border: 2px solid black;
+    border-collapse: collapse;
+    margin-bottom: 40;
+}
+table{
+    background-color: rgb(256,234,234);
+    position: relative;
+    left: 250px;
+    top: 45px;
+}
+td{
+    width: 500px;
+    padding: 5px;
+    text-align: center;
+   
+}
+button{
+    background-color: rgb(144,202,249);
+    color: black;
+    border: 2px solid black;
+    width: 70px;
+    height: 35px;
+    margin: 5px;
+    border-radius: 7px;
+}
+.number{
+    position: relative;
+    bottom:175px;
+    left: 550px;
+}
+.load{
+    position: relative;
+    top: 30px;
+    left: 800px;
+}

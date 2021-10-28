@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import Data from './data.json'
 import ReactTable from "react-table";  
+import styles from './single1.module.css'
+
  
 
 var array=[],access;
@@ -51,7 +53,9 @@ var array=[],access;
 
      }
      push=()=>{
-         array.push(parseInt(access.value));
+         if(access.value!=""){
+            array.push(parseInt(access.value));
+         }
          access.value=""
          
         //  this.func();
@@ -109,7 +113,7 @@ var array=[],access;
 
         return (
             <div>
-                <button onClick={this.func}>load</button>
+                <button onClick={this.func} className={styles.load}>load</button>
                 {/* <button onClick={this.print}>print</button> */}
                 {/* <button onClick={this.getData}>load</button> */}
               <table >
@@ -136,8 +140,8 @@ var array=[],access;
                   </tr>
                  </thead>
               </table>
-            <input id="number"></input>
-            <button id="butt" onClick={this.push}> push it</button>
+            <input id="number" className={styles.number}></input>
+            <button id="butt" className={styles.number} onClick={this.push}> push it</button>
             </div>
         )
     }
